@@ -7,6 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "UIImageView+WebCache.h"
+#import "UIImage+GIF.h"
+#import "FLAnimatedImageView.h"
+#import "FLAnimatedImage.h"
 
 @interface ViewController ()
 
@@ -16,7 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    FLAnimatedImageView *imv = [[FLAnimatedImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
+    imv.center = self.view.center;
+    [self.view addSubview:imv];
+    
+    
+    NSURL *imgUrl = [[NSBundle mainBundle] URLForResource:@"timg" withExtension:@"gif"];
+    FLAnimatedImage *animatedImg = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:imgUrl]];
+    imv.animatedImage = animatedImg;
 }
 
 

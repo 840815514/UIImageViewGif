@@ -15,6 +15,8 @@
 		2758257721A52EB100DDE692 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2758257621A52EB100DDE692 /* main.m */; };
 		2758258121A52EB100DDE692 /* UIImageViewGifTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2758258021A52EB100DDE692 /* UIImageViewGifTests.m */; };
 		2758258C21A52EB100DDE692 /* UIImageViewGifUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2758258B21A52EB100DDE692 /* UIImageViewGifUITests.m */; };
+		2758259A21A5300300DDE692 /* timg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2758259921A5300300DDE692 /* timg.gif */; };
+		36025F0797CF086496421F27 /* Pods_UIImageViewGif.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93DBA8D25B7C4BEB28A0DA0 /* Pods_UIImageViewGif.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		2758258721A52EB100DDE692 /* UIImageViewGifUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIImageViewGifUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2758258B21A52EB100DDE692 /* UIImageViewGifUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewGifUITests.m; sourceTree = "<group>"; };
 		2758258D21A52EB100DDE692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2758259921A5300300DDE692 /* timg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = timg.gif; sourceTree = "<group>"; };
+		7D41108BAAE9DA711BA0455F /* Pods-UIImageViewGif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageViewGif.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIImageViewGif/Pods-UIImageViewGif.release.xcconfig"; sourceTree = "<group>"; };
+		A59A745C0D9ECE533424B41E /* Pods-UIImageViewGif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIImageViewGif.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIImageViewGif/Pods-UIImageViewGif.debug.xcconfig"; sourceTree = "<group>"; };
+		A93DBA8D25B7C4BEB28A0DA0 /* Pods_UIImageViewGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIImageViewGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36025F0797CF086496421F27 /* Pods_UIImageViewGif.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,8 @@
 				2758257F21A52EB100DDE692 /* UIImageViewGifTests */,
 				2758258A21A52EB100DDE692 /* UIImageViewGifUITests */,
 				2758256521A52EB000DDE692 /* Products */,
+				8232C562AF33012928C573EB /* Pods */,
+				2E633A5D2C75EB8A9BE5E312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +110,7 @@
 		2758256621A52EB000DDE692 /* UIImageViewGif */ = {
 			isa = PBXGroup;
 			children = (
+				2758259921A5300300DDE692 /* timg.gif */,
 				2758256721A52EB000DDE692 /* AppDelegate.h */,
 				2758256821A52EB000DDE692 /* AppDelegate.m */,
 				2758256A21A52EB000DDE692 /* ViewController.h */,
@@ -132,6 +142,23 @@
 			path = UIImageViewGifUITests;
 			sourceTree = "<group>";
 		};
+		2E633A5D2C75EB8A9BE5E312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A93DBA8D25B7C4BEB28A0DA0 /* Pods_UIImageViewGif.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8232C562AF33012928C573EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A59A745C0D9ECE533424B41E /* Pods-UIImageViewGif.debug.xcconfig */,
+				7D41108BAAE9DA711BA0455F /* Pods-UIImageViewGif.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2758259021A52EB100DDE692 /* Build configuration list for PBXNativeTarget "UIImageViewGif" */;
 			buildPhases = (
+				43BCB926E336E6D041F76DBB /* [CP] Check Pods Manifest.lock */,
 				2758256021A52EB000DDE692 /* Sources */,
 				2758256121A52EB000DDE692 /* Frameworks */,
 				2758256221A52EB000DDE692 /* Resources */,
+				855EF63725F91328C4E5BF27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2758257421A52EB100DDE692 /* LaunchScreen.storyboard in Resources */,
+				2758259A21A5300300DDE692 /* timg.gif in Resources */,
 				2758257121A52EB100DDE692 /* Assets.xcassets in Resources */,
 				2758256F21A52EB000DDE692 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +286,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43BCB926E336E6D041F76DBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UIImageViewGif-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855EF63725F91328C4E5BF27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UIImageViewGif/Pods-UIImageViewGif-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIImageViewGif/Pods-UIImageViewGif-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2758256021A52EB000DDE692 /* Sources */ = {
@@ -433,6 +512,7 @@
 		};
 		2758259121A52EB100DDE692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59A745C0D9ECE533424B41E /* Pods-UIImageViewGif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +530,7 @@
 		};
 		2758259221A52EB100DDE692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D41108BAAE9DA711BA0455F /* Pods-UIImageViewGif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
